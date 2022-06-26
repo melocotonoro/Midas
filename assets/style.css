@@ -1,0 +1,170 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+}
+
+
+@import url("./assets/gridCss.css");
+body{
+font-family: 'Roboto', sans-serif;
+background-color: #e0e0e0;    
+}
+/**NAV BAR**/
+.sectionNavBar{
+background-color: #464646;
+height: 100px;
+width: 100%;
+position: fixed;
+z-index: 1;
+}
+
+.containerItemsNav{
+display:flex;
+justify-content:space-between;
+margin: 0 auto;
+}
+
+.itemsNavBar{
+width: 90%;
+display: flex;
+flex-flow:row nowrap;
+list-style-type: none;
+align-items: center;
+justify-content:space-evenly;
+}
+.logo{
+font-size:1.5em;
+font-weight:500;
+color: #EDB713;
+margin: 15px;
+padding:0px 20px;
+width:max-content;
+}
+.itemsNavBar li a{
+font: weight 4px;
+font-size:larger;
+font-style: oblique;
+color:#f5f5f5;
+padding: 8px 12px;
+border-radius: 3px;
+}
+.itemsNavBar li a:is(:hover, :active){
+background-color:#2c2c2c;
+transition: .5s;
+}
+.menuIcon{
+color:#f5f5f5;
+background: none;
+border: none;
+font-size: 1.5em;
+padding: 0px 20px;
+line-height: 60px;
+display: none;
+cursor: pointer;
+}
+
+/********SECTION WE************/
+.sectionWe{
+width: 100%;
+}
+.bgroundWe{
+width: 100%;
+height: 43.5rem;
+}
+.btnWe{
+position: absolute;
+right:50%;
+top: 50%;
+background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+margin:10px;
+padding: 15px 30px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;
+border-radius: 10px;
+display: block;
+border: 0px;
+font-weight: 700;
+box-shadow: 0px 0px 14px -7px #f09819;
+}
+
+.btnWe:is(:hover, :active) {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.textWe{
+width:30%;
+position: absolute;
+top: 35%;
+margin-left: 3%;
+font-size: 2.5rem;
+color:#f5f5f5;
+}
+
+/******MEDIA QUERY****/
+@media(max-width: 768px){
+
+    /**NAV BAR**/
+.sectionNavBar{
+height: 80px;
+}
+
+.containerItemsNav{
+justify-content:start;
+margin: 0px;
+padding: 0px;
+}
+.itemsNavBar{
+width: 100%;
+height: 0px;
+flex-direction: column;
+background-color: #7a7979;
+position: fixed;
+left: 0px;
+top: 80px;
+overflow-y: auto;
+transition: top 0.8s;
+}
+.logo{
+font-size:1em;
+font-weight:500;
+}
+
+.itemsNavBar li a:is(:hover, :active){
+background:none;
+color: darkgoldenrod;
+}
+.menuIcon{
+margin-left: 10em;
+display: block;
+}
+.itemsNavBar-visible{
+height: 10em;
+}
+
+/******Section we**/
+.btnWe{
+right:20%;
+top: 40%;
+background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+margin:10px;
+padding: 10px 15px;
+background-size: 200% auto;
+font-weight: 300;
+}
+}
+
+
+@media(max-width: 480px){
+/******Section we**/
+.btnWe{
+    right:20%;
+    top: 30%;
+}
+}

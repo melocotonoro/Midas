@@ -1,0 +1,48 @@
+
+.pageContainer{
+display: grid;
+grid-template-areas:"navB navB navB navB navB navB"
+                        "we we we we we we"
+                        ". service service service service ."
+                        ". works works works works ."
+                        ".clients clients clients clients ."
+                        ".withUs withUs withUs withUs."
+                        "footer footer footer footer footer footer";
+width: 100%;
+grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+grid-template-rows: 100px 600px 350px 1000px 1000px 350px 200px;
+row-gap: 20px;
+}
+
+.sectionNavBar{
+grid-area: navB;
+border: 2px solid hotpink;
+}
+
+.sectionAbout{
+grid-area:we;
+border:2px solid hotpink;
+}
+
+.sectionService{
+grid-area: service;
+border: 2px solid hotpink;
+}
+
+.sectionWorks{
+grid-area: works;
+border: 2px solid hotpink;
+}
+.sectionourClientSay{
+    grid-area: clients;
+    border: 2px solid hotpink;
+    }
+
+.sectionWorkWithUs{
+grid-area: withUs;
+border: 2px solid hotpink;
+}
+.sectionFooter{
+grid-area: footer;
+border: 2px solid hotpink;
+}
